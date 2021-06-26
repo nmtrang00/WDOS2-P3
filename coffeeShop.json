@@ -1,0 +1,30 @@
+{
+    "type":[
+       "Espresso",
+       "Cappuccino",
+       "Americano",
+       "Pour over",
+       "Chemex"
+    ],
+    "coffee":[
+       "House espresso",
+       "Guest espresso",
+       "Single origin",
+       "House blend"
+    ],
+    "size":[
+       "Single",
+       "Double",
+       "Medium",
+       "Small",
+       "Large",
+       "Onesize"
+    ],
+    "extra":[
+       "Cold milk",
+       "Hot milk",
+       "Chocolate dusting",
+       "Marshmallows",
+       "Whipped cream"
+    ]
+ }

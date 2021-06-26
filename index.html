@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Order">
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <h1>James' Coffee Shop</h1>
+        <p>This page is for ordering drinks. Any field with * is compulsory.<br>
+            Save a favorite drink before adding it to the cart.
+        </p>
+    </header>
+    <main>
+        <form method="get">
+                <div>
+                    <fieldset id="type">
+                        <legend>Type (*):</legend>
+                    </fieldset>
+                </div><br>
+
+                <div>
+                    <label for="coffee">Coffee (*):</label>
+                    <select id="coffee" name="coffees" onchange="current()" >
+                        <option value="Default">Please choose the type of coffee first</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <label for="size">Size (*):</label>
+                    <select id="size" name="sizes" onchange="current()" >
+                        <option value="Default">Please choose the type of coffee first</option>
+                    </select>
+                </div> <br>
+
+                <div>
+                    <fieldset id="extra">
+                        <legend>Extras:</legend>
+                    </fieldset> 
+                </div><br>
+
+                <div id="currentDrink">
+                    <p><b>CURRENT DRINK:</b></p>
+                </div><br>
+
+                <input type='Button' id="save" value="Save Favorite" disabled="disabled"> <br>
+                
+                <div id="favDrink">
+                    <p><b>FAVORITE DRINK:</b></p>
+                </div><br>
+
+                <input type ='Button' id="add" value="Order Favorite" disabled="disabled"><br>
+                
+                <div id="cart">
+                    <p><b>CART:</b></p>
+                </div><br>
+                <div id="total">
+                </div><br>
+                
+                <input type ='Button' id="final" value="CHECKOUT" disabled="disabled"><br><br>
+
+                <div id="confirmation">
+                </div>
+         
+        </form>
+        <script type="text/json" src="coffeeShop.json"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </main>
+</body>
+</html>
+<!-- https://nmt-p3.web.app -->
